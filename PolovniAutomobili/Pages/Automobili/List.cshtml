@@ -1,0 +1,18 @@
+﻿@page
+@model PolovniAutomobili.Pages.Automobili.ListModel
+@{
+}
+<h1>Automobili</h1>
+
+<table class="table">
+    @foreach(var car in Model.Cars)
+    {
+    <tr>
+        <td>@car.Id</td>
+        <td>@car.Description</td>
+        <td>@car.Gorivo</td>
+    </tr>
+    }
+</table>
+
+<div>@Model.Message;</div>
