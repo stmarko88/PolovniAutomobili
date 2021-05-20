@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolovniAutomobili", "PolovniAutomobili\PolovniAutomobili.csproj", "{317D29DF-6DD6-4FA5-B2AA-902CD0650423}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolovniAutomobili", "PolovniAutomobili\PolovniAutomobili.csproj", "{317D29DF-6DD6-4FA5-B2AA-902CD0650423}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolovniAutomobili.Core", "PolovniAutomobili.Core\PolovniAutomobili.Core.csproj", "{1313142F-DE50-4472-A82A-B8297F3A6949}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolovniAutomobili.Core", "PolovniAutomobili.Core\PolovniAutomobili.Core.csproj", "{1313142F-DE50-4472-A82A-B8297F3A6949}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolovniAutomobili.Data", "PolovniAutomobili.Data\PolovniAutomobili.Data.csproj", "{4C3487DF-F89C-4BC1-B23E-205E587489D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolovniAutomobili.Data", "PolovniAutomobili.Data\PolovniAutomobili.Data.csproj", "{4C3487DF-F89C-4BC1-B23E-205E587489D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

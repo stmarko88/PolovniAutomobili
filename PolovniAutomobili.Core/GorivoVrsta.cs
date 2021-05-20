@@ -4,7 +4,6 @@
     {
         Benzin,
         Dizel,
-        Hibrid,
-        Gas
+        Hibrid
     }
 }

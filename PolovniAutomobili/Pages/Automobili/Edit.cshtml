@@ -1,0 +1,27 @@
+﻿@page "{carId:int?}"
+@model PolovniAutomobili.Pages.Automobili.EditModel
+@{
+}
+
+<h1>Izmena auto br. @Model.Car.Id</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Car.Id" />
+    <div class="form-group">
+        <label asp-for="Car.Name"></label>
+        <input asp-for="Car.Name" class="form-control" />
+        <span class="text-danger" asp-validation-for="Car.Name"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Car.Description"></label>
+        <input asp-for="Car.Description" class="form-control" />
+        <span class="text-danger" asp-validation-for="Car.Description"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Car.Gorivo"></label>
+        <select class="form-control" asp-for="Car.Gorivo" asp-items="Model.Goriva">
+        </select>
+        <span class="text-danger" asp-validation-for="Car.Gorivo"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Sačuvaj</button>
+</form>

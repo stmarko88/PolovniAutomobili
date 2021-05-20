@@ -4,15 +4,41 @@
 }
 <h1>Automobili</h1>
 
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control" asp-for="SearchTerm"/>
+            <span class="input-group-btn">
+                <button class="btn btn-default">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</form>
+    
 <table class="table">
     @foreach(var car in Model.Cars)
     {
     <tr>
         <td>@car.Id</td>
+        <td>@car.Name</td>
         <td>@car.Description</td>
         <td>@car.Gorivo</td>
+        <td>
+            <a class="btn btn-lg"
+               asp-page="./Detail" asp-route-carId="@car.Id">
+                Detalji
+            </a>
+            <a class="btn btn-lg"
+               asp-page="./Edit" asp-route-carId="@car.Id">
+                Edit
+            </a>
+        </td>
     </tr>
     }
 </table>
+
+<a class="btn btn-primary" asp-page="./Edit">Add new car</a>
 
 <div>@Model.Message;</div>

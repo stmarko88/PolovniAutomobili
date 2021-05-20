@@ -9,6 +9,12 @@ namespace PolovniAutomobili.Data
 {
     public interface IAutomobilData
     {
-        IEnumerable<Automobil> GetAll();
+        IEnumerable<Automobil> GetCarsByName(string name);
+        Automobil GetById(int id);
+        Automobil Update(Automobil updatedCar);
+        Automobil Add(Automobil newCar);
+        Automobil Delete(int id);
+        int Commit(); // simulacija Entity Framework-a i SaveChanges
+        // Dok koristimo memorijske podatke, ova metoda nema smisla 
     }
 }
